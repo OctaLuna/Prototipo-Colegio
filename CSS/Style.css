@@ -1,0 +1,50 @@
+body {
+    /*Es el margen*/
+    margin: 0;
+    /*Es el espacio de relleno requerido por todas partes de un elemento que en este caso es el body*/
+    padding: 0;
+    /*Este es el tamaño de la letra en el body*/
+    font-size: 14px;
+    /*Este es el tipo de letra del body*/
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+a {
+    /*Esto es para quitar la decoracion del texto*/
+    text-decoration: none;
+    /*Esto es para que cuando el cursor lo pase cambie al dedito*/
+    cursor: pointer;
+}
+header {
+    /*Esto es el ancho*/
+    width: auto;
+    /*Esta es la altura de el header*/
+    height: 50px;
+}
+header nav {
+    display: flex;
+    /*Esto es para ajustarlo en el centro*/
+    justify-content: center;
+}
+header nav .nav-right-section {
+    /*Esto es el ancho*/
+    width: 200px;
+    /*Esta es la altura del ul alque tiene esta clase, se le pone auto para que tenga la misma
+    altura que su padre que es el header nav*/
+    height: auto;
+    display: flex;
+    /*Esto es para que quite el redondo del ul que tiene cada lista a la izquierda para 
+    el encabezado*/
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a {
+    /*Esto es par adistancia entre cada palabra "a"*/
+    margin: 90px;
+    /*margin-right: 10px;*/
+    color: #000000;
+}
+
+nav .nav-right-section .search-icon{
+    background-image: image("./Assets/Lupa.png");
+}
