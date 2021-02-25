@@ -13,21 +13,67 @@ a {
     text-decoration: none;
     /*Esto es para que cuando el cursor lo pase cambie al dedito*/
     cursor: pointer;
+    display: inline;
+    color: #000000;
+    
 }
 header {
     /*Esto es el ancho*/
-    width: auto;
+    width: 100%;
     /*Esta es la altura de el header*/
-    height: 50px;
+    height: 60px;
+    font-weight: 500;
+    color: #CECECE;
 }
-header nav {
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0%;
+    
+}
+
+header nav .nav-section-left {
     display: flex;
-    /*Esto es para ajustarlo en el centro*/
-    justify-content: center;
+    justify-content: flex-start;
+    justify-self: flex-start;
+    list-style: none;
 }
-header nav .nav-right-section {
+header nav .nav-section-center {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    
+}
+header nav .nav-section-right {
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    
+}
+
+
+
+
+/*SECCION UNO DEL HEADER*/
+header nav .nav-left-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+nav .home-icon img {
+    height: 40px;
+    width: auto;
+}
+
+/*SECCION DOS DEL HEADER*/
+header nav .nav-center-section {
     /*Esto es el ancho*/
-    width: 200px;
+    width: 250px;
     /*Esta es la altura del ul alque tiene esta clase, se le pone auto para que tenga la misma
     altura que su padre que es el header nav*/
     height: auto;
@@ -37,14 +83,33 @@ header nav .nav-right-section {
     list-style: none;
     justify-content: center;
     align-items: center;
+    
+    
 }
-nav .nav-right-section a {
+header nav .nav-center-section  a{
     /*Esto es par adistancia entre cada palabra "a"*/
-    margin: 90px;
+    margin: 100px;
     /*margin-right: 10px;*/
     color: #000000;
 }
 
-nav .nav-right-section .search-icon{
-    background-image: image("./Assets/Lupa.png");
+/*SECCION TRES DEL HEADER*/
+
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+header nav .nav-right-section a {
+    margin-right: 70px;
+    color: #000000;
+}
+
+nav .nav-right-section img {
+    height: 20px;
+    width: auto;
 }
