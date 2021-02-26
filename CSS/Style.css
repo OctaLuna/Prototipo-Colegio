@@ -4,7 +4,7 @@ body {
     /*Es el espacio de relleno requerido por todas partes de un elemento que en este caso es el body*/
     padding: 0;
     /*Este es el tamaño de la letra en el body*/
-    font-size: 14px;
+    font-size: 16px;
     /*Este es el tipo de letra del body*/
     font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 }
@@ -21,9 +21,10 @@ header {
     /*Esto es el ancho*/
     width: 100%;
     /*Esta es la altura de el header*/
-    height: 60px;
+    height: 90px;
+    /*Esto es para la cantidad de negrilla que tiene las letras*/
     font-weight: 500;
-    color: #CECECE;
+    background-color: #D8D8D8;
 }
 
 nav {
@@ -33,18 +34,21 @@ nav {
     
 }
 
+/*Esto es para controllar la seccion izquierda del encabezado*/
 header nav .nav-section-left {
     display: flex;
     justify-content: flex-start;
     justify-self: flex-start;
     list-style: none;
 }
+/*Esto es para controllar la seccion del  centro del encabezado*/
 header nav .nav-section-center {
     display: flex;
     justify-content: center;
     justify-self: center;
     
 }
+/*Esto es para controllar la seccion derecha del encabezado*/
 header nav .nav-section-right {
     display: flex;
     justify-content: flex-end;
@@ -56,21 +60,25 @@ header nav .nav-section-right {
 
 
 /*SECCION UNO DEL HEADER*/
+/*Esto es para controllar toda la seccion de la izquierda*/
 header nav .nav-left-section{
     width: 250px;
     height: auto;
     display: flex;
     list-style: none;
     justify-content: flex-start;
-    align-items: flex-start;
+    /*Esto es parta ver si estara en el centro arriba o abajo en el header*/
+    align-items: center;
 
 }
+/*Esto es el controlador de la imagen de logo*/
 nav .home-icon img {
-    height: 40px;
+    height: 60px;
     width: auto;
 }
 
 /*SECCION DOS DEL HEADER*/
+/*Este es el controlador del centro de las ventanas*/
 header nav .nav-center-section {
     /*Esto es el ancho*/
     width: 250px;
@@ -86,6 +94,7 @@ header nav .nav-center-section {
     
     
 }
+/*Esto es para controlar las letras*/
 header nav .nav-center-section  a{
     /*Esto es par adistancia entre cada palabra "a"*/
     margin: 100px;
@@ -101,11 +110,12 @@ header nav .nav-right-section {
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
 }
 
 header nav .nav-right-section a {
-    margin-right: 70px;
+    /*Esto es para la distancia de las palabras*/
+    margin-right: 100px;
     color: #000000;
 }
 
@@ -113,3 +123,12 @@ nav .nav-right-section img {
     height: 20px;
     width: auto;
 }
+/*
+nav .nav-busqueda-right input {
+    width: 200px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    
+}
+*/
